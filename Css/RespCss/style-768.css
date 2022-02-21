@@ -1,0 +1,102 @@
+#before-header > div > img {
+    height: 30%;
+}
+.to-arrow-n-anim > i{
+    font-size: 4.5em;
+}
+.head-div-first{
+    width: 40%;
+}
+.div-title-portfolio{
+    width: 100%;
+}
+.div-title-portfolio > h2{
+    font-size: 1em;
+}
+.nav-ul > a > li{
+    font-size: 0.8em;
+}
+.div-name-portfolio{
+    font-size: 0.6em;
+}
+.slide{
+    height: 35vh;
+}
+.section-propos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-propo01,
+.text-propo02{
+    width: 80%;
+}
+.box-anim-propo > i{
+    font-size: 2.5em;
+}
+.p-rocket{
+    width: 150px;
+    font-size: 10px;
+}
+@keyframes lineUp{
+    100%{
+        stroke-dashoffset: 179;
+    }
+}
+@keyframes lineUpJs {
+    100%{
+        stroke-dashoffset: 400;
+    }
+}
+@keyframes lineUpCss {
+    100%{
+        stroke-dashoffset: 220;
+    }
+}
+.div-todo{
+    width: 40%;
+}
+
+.div-music-player{
+    width: 40%;
+}
+.div-gen-joke{
+    margin: 0 auto;
+    width: 50%;
+}
+.sec-projet {
+    height: 130vh;
+    overflow-y: hidden;
+}
+footer{
+    height: 20vh;
+}
+.cir-cle1:nth-child(1){
+    top: 30%;
+    left: 30%;
+    animation: bouclS 2s linear 7s infinite;
+    display: none;
+}
+.cir-cle1:nth-child(2){
+    top: 30%;
+    left: 7%;
+}
+.cir-cle1:nth-child(3){
+    top: 26%;
+    left: 11%;
+}
+.cir-cle1:nth-child(4){
+    top: 30%;
+    left: 35%;
+}
+.foot-bull{
+    height: 60px;
+    width: 60px;
+}
+#log-port{
+    height: 135%;
+    width: 111%;
+}
+#js-id-icon{
+    width: 30%;
+}

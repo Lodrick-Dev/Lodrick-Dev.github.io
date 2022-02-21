@@ -1,0 +1,47 @@
+.div-title-portfolio > h2{
+    padding: 0 5px;
+}
+.slide {
+    height: 16vh;
+}
+.section-propos .box-mg-prop img{
+    margin: 0;
+}
+.html,
+.css{
+    height: 30vh;
+}
+#js-id-icon{
+    height: 35vh;
+}
+.html > span {
+    top: 20px;
+}
+@keyframes lineUp {
+    100% {
+        stroke-dashoffset: 135;
+    }
+}
+.javascript > span {
+    top: 25px;
+}
+@keyframes lineUpJs {
+    100% {
+        stroke-dashoffset: 380;
+    }
+}
+.css > span {
+    top: 40px;
+}
+@keyframes lineUpCss {
+    100% {
+        stroke-dashoffset: 192;
+    }
+}
+.sec-projet {
+    height: 119vh;
+}
+.div-todo, .div-music-player, .div-gen-joke {
+    width: 80%;
+    height: 34vh;
+}

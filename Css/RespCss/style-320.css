@@ -1,0 +1,85 @@
+
+#before-header > div > img {
+    height: 15%;
+}
+.div-title-portfolio > h2{
+    font-size: 1em;
+}
+.nav-ul > a > li {
+    font-size: 0.6em;
+}
+
+.box-title-interet > h2{
+    font-size: 1.2em;
+}
+
+.box-icon-game > i, .box-icon-laptop > i {
+    font-size: 2em;
+}
+.section-pro-title > p{
+    font-size: 1em;
+}
+.section-pro-title > span {
+    font-size: 0.8em;
+}
+.text-propo01, .text-propo02 {
+    width: 90%;
+}
+.section-propos .box-mg-prop img{
+    margin: 0;
+}
+.box-anim-propo{
+    padding-bottom: 20px;
+}
+.p-rocket{
+    font-size: 7px;
+    position: absolute;
+    bottom:0px;
+}
+/*les SVG*/
+.html > span {
+    font-size: 1.5em;
+    top: 40px;
+}
+.skill-svg-html{
+    animation: lineUpNew 2s linear forwards !important;
+}
+@keyframes lineUpNew {
+    100% {
+        stroke-dashoffset: 200;
+    }
+}
+.javascript > span {
+    font-size: 1.5em;
+    top: 50px;
+}
+.skill-svg-javascript{
+    animation: lineUpJsNew 2s linear forwards !important;
+}
+@keyframes lineUpJsNew {
+    100% {
+        stroke-dashoffset: 485;
+    }
+}
+.css > span {
+    top: 70px;
+}
+.skill-svg-css{
+    animation: lineUpCssNew 2s linear forwards !important;
+}
+@keyframes lineUpCssNew {
+    100% {
+        stroke-dashoffset: 260;
+    }
+}
+
+.sec-projet {
+    height: 133vh !important;
+}
+.box-des-projet{
+    width: 100%;
+}
+.cir-cle1:nth-child(4) {
+    top: 30%;
+    left: 25%;
+}

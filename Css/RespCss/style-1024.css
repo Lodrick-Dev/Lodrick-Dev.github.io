@@ -1,0 +1,37 @@
+#before-header > div > img{
+    height: 35%;
+}
+.head-div-second{
+    width: 55%;
+}
+.div-title-portfolio > h2{
+    font-size: 1.3em;
+}
+.ball-dance{
+    height: 30px;
+    width: 30px;
+}
+.ball-dance-yellow{
+    height: 30px;
+    width: 30px;
+}
+.ball-dance-other{
+    height: 30px;
+    width: 30px;
+}
+.section-propos .box-mg-prop img{
+    height: 44vh;
+}
+.text-propo01{
+    width: 29%;
+}
+@keyframes lineUp {
+    100%{
+        stroke-dashoffset: 180;
+    }
+}
+@keyframes lineUpCss {
+    100%{
+        stroke-dashoffset: 190;
+    }
+}

@@ -1,0 +1,42 @@
+.div-title-portfolio > h2{
+    font-size: 1em;
+}
+.slide {
+    height: 15vh;
+}
+.box-icon-game > i, .box-icon-laptop > i {
+    font-size: 2em;
+}
+.sec-projet {
+    height: 187vh !important;
+}
+.html, .css {
+    height: 40vh !important;
+}
+.skill-svg-html{
+    animation: lineUpto-375 2s linear forwards;
+}
+@keyframes lineUpto-375 {
+    100% {
+        stroke-dashoffset: 173;
+    }
+}
+.skill-svg-javascript{
+    animation: lineUpJsto-375 2s linear forwards;
+}
+#js-id-icon {
+    height: 45vh !important;
+}
+@keyframes lineUpJsto-375 {
+    100% {
+        stroke-dashoffset: 440;
+    }
+}
+.skill-svg-css{
+    animation: lineUpCssto-375 2s linear forwards;
+}
+@keyframes lineUpCssto-375 {
+    100% {
+        stroke-dashoffset: 225;
+    }
+}

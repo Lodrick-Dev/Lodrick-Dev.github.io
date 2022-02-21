@@ -1,0 +1,14 @@
+Pourquoi cette couleur verte ? Pour l'argent !
+
+Passionné depuis toujours de tout ce qui tourne autour de l'informatique.
+En 2017 je découvre le cms WORDPRESS.
+Pour découvrir ce "web-monde" et j'apprends en autodidacte sur
+ce module je lance mon tout premier site, qui sera un blog personnel. Fermé en 2018.
+Cette même année je lance un site d'annonce pour les particuliers. Voulant
+personnaliser un peu plus ce nouveau site à manière en 2019 je découvre HTML,
+CSS, j'apprends en autodidact en faisant des recherches partout sur le web,
+jusqu'à apprendre le javascript. Aujourd'hui me voilà Developeur front-end.
+Abitieux, et en apprentissage constemment je suis parti pour devenir
+developpeur full stack. C'est l'objetif a atteindre.
+
+Si mes projets parraissent fini. Détrompez-vous je sais de les améliorer
