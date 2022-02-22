@@ -17,22 +17,16 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #fff;
     margin: 0;
     overflow-y: hidden;
     /* position: absolute; */
     /* z-index: 50; */
     /* height: 0; */
 }
-.head-div-first > div:nth-child(1){
-    background: #0888bb;
-}
-.head-div-first > div:nth-child(2){
-    background: #46508d;
-}
+
 .head-div-first > div:nth-child(1),
 .head-div-first > div:nth-child(2){
-    margin: 5px 0;
+    margin: 0;
 }
 .ball-header {
     height: 50%;
@@ -40,6 +34,9 @@ header{
     overflow-y: hidden;
 }
 .div-title-portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50%;
 }
 .div-title-portfolio > h2{
