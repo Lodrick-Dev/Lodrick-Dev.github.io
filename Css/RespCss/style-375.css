@@ -52,7 +52,7 @@
     height: 40%;
 }
 footer{
-    height: 150px;;
+    height: 150px !important;
 }
 .logo-down{
     height: 30%;
