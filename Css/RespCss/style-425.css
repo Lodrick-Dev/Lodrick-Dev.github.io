@@ -1,8 +1,7 @@
 #before-header > div > img {
     height: 20%;
 }
-header{
-    height: 30vh;
+header{height: 30vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,6 +22,10 @@ header{
     /* position: absolute; */
     /* z-index: 50; */
     /* height: 0; */
+}
+.head-div-first > div:nth-child(1),
+.head-div-first > div:nth-child(2){
+    margin: 5px 0;
 }
 .ball-header {
     height: 50%;
@@ -246,7 +249,7 @@ main{
 
 /*section projet*/
 .sec-projet{
-    height: 183vh;
+    height: 0% !important;
 }
 .box-title-projet{
     width: 80%;
