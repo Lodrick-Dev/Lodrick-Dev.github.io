@@ -265,11 +265,16 @@ main{
     overflow-y: hidden;
 }
 footer{
-    height: 10vh;
+    height: 45vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column !important;
     justify-content: space-between;
 }
+
 #foot-a{
     width: 19%;
+    height: 47%;
 }
 .cir-cle1:nth-child(3)::before{
     height: 5px;
@@ -302,4 +307,7 @@ footer{
 .foot-bull{
     height: 40px;
     width: 40px;
+}
+.logo-down{
+    height: 30%;
 }
