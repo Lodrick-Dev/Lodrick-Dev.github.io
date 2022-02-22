@@ -918,7 +918,7 @@ main{
 
 /******************section projet*/
 .sec-projet{
-    height: 100vh;
+    /* height: 100vh; */
     background: var(--bg-section);
     padding: 20px 0;
 }

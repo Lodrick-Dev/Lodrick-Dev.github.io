@@ -8,7 +8,10 @@
     font-size: 2em;
 }
 .sec-projet {
-    height: 187vh !important;
+    height: 0% !important;
+}
+.legend-proj{
+    padding: 20px 0 0;
 }
 .html, .css {
     height: 40vh !important;
@@ -39,4 +42,15 @@
     100% {
         stroke-dashoffset: 225;
     }
+}
+.box-img-des-proj{
+    width: 85%;
+    height: 50%;
+    margin: 0 auto;
+}
+.sociaux-cont{
+    height: 40%;
+}
+footer{
+    height: 25vh;
 }

@@ -65,7 +65,8 @@
     width: 50%;
 }
 .sec-projet {
-    height: 130vh;
+    height: 0%;
+    padding: 30px 0;
     overflow-y: hidden;
 }
 footer{
