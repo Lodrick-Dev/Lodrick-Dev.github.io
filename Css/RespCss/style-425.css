@@ -265,7 +265,8 @@ main{
     overflow-y: hidden;
 }
 footer{
-    height: 45vh;
+    /* height: 45vh; */
+    height: 200px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column !important;
