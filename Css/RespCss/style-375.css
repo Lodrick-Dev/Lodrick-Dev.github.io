@@ -54,3 +54,17 @@
 footer{
     height: 25vh;
 }
+.logo-down{
+    height: 30%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#log-port{
+    width: 20%;
+    height: 90%;
+}
+#log-portfo{
+    height: 100%;
+    width: 90%;
+}
