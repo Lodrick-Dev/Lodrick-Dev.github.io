@@ -1,3 +1,6 @@
+#before-header{
+    height: 90vh;
+}
 #before-header > div > img {
     height: 20%;
 }

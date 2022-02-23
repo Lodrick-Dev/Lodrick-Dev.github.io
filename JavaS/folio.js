@@ -1,11 +1,10 @@
 ////timeNow
 const horaire = document.querySelector('.head-div-time > span');
-console.log(horaire);
 function leTime(){
-    let dateNow = new Date();//doit etre dans la function
-    let heures = dateNow.getHours();//doit etre dans la function
-    let minutes = dateNow.getMinutes();//doit etre dans la function
-    let secondes = dateNow.getSeconds();//doit etre dans la function
+    let dateNow = new Date();
+    let heures = dateNow.getHours();
+    let minutes = dateNow.getMinutes();
+    let secondes = dateNow.getSeconds();
     if(heures < 10){
         heures = "0" + heures;
     }
@@ -38,8 +37,6 @@ btn_menu.addEventListener('click', ()=>{
     ball2.classList.toggle("ball-paused");
     ball3.classList.toggle("ball-paused");
     btn_menu.classList.toggle("btn-menu-actif");
-    // setTimeout(()=>{
-    // }, 100)
     navi.classList.toggle("nav-actif")
     span01.classList.toggle("first-span")
     span02.classList.toggle("second-span")
@@ -60,7 +57,6 @@ const frec02 = document.querySelector(".freq-music span:nth-child(2)");
 const frec03 = document.querySelector(".freq-music span:nth-child(3)");
 const frec04 = document.querySelector(".freq-music span:nth-child(4)");
 const frec05 = document.querySelector(".freq-music span:nth-child(5)");
-// const frecCob = document.getElementById("cobaye");
 
 //box lancement fusée
 let box_energy_rocket = document.querySelector('.box-anim-propo');
@@ -69,17 +65,6 @@ let box_energy_rocket = document.querySelector('.box-anim-propo');
 const svg_skill_html = document.querySelector('#svg-html > circle:nth-child(2)');
 const svg_skill_javascript = document.querySelector('#svg-js > circle:nth-child(2)');
 const svg_skill_css = document.querySelector('#svg-css > circle:nth-child(2)');
-// window.addEventListener('scroll', function(){
-//     //window.innerHeight : C'est la hauteur visible de la fenêtre
-//     //window.scrollY : value du scroll fait un log pour voir
-//     //window.body.offsetHeight : c'est la hauteur de l'element compris avec padding et border, ici cest le body.
-//     //pour trouver un resultat en pourcentage faut diviser ainsi compatible sur tout ecran
-//     let valuScroll =  (window.innerHeight + window.scrollY) / (document.body.offsetHeight);
-//     console.log(valuScroll);
-//     if(valuScroll < 0.51){
-//         stepWithTime();
-//     }
-// });
 
 window.onload = funcToWel;
 function funcToWel(){
@@ -93,7 +78,6 @@ function runAnim() {
     frec03.classList.add("frec03");
     frec04.classList.add("frec02");
     frec05.classList.add("frec01");
-    // frecCob.classList.add("le-cobay")
     setTimeout(() => { 
         frec01.classList.remove("frec01");
         frec02.classList.remove("frec02");
@@ -101,13 +85,10 @@ function runAnim() {
         frec04.classList.remove("frec02");
         frec05.classList.remove("frec01");
         funcToWel();
-        // animRight();
     }, 3000);
-    // stopAnim();
 }
 
 function animRight(){
-    // frecCob.classList.remove("le-cobay")
     enf04.classList.add("floppy-anime06");
     setTimeout(() => {
         enf05.classList.add("floppy-anime05");
@@ -122,26 +103,6 @@ function animRight(){
         }, 1000);
     }, 1000);
 }
-// function animRight(){
-//     enf06.classList.add("floppy-anime06");
-//     enf06.addEventListener('animationend', function(){
-//         setTimeout(() => {
-//             enf06.classList.remove('floppy-anime06')
-//         }, 3000);
-//         enf05.classList.add("floppy-anime05");
-//         enf05.addEventListener('animationend', function(){
-//             setTimeout(() => {
-//                 enf05.classList.remove('floppy-anime05')
-//             }, 2000);
-//             enf04.classList.add("floppy-anime04")
-//             enf04.addEventListener('animationend', function(){
-//                 setTimeout(() => {
-//                    enf04.classList.remove('floppy-anime04');
-//                 }, 1000);
-//             })
-//         })
-//     })
-// }
 
 function animLeft(){
     enf03.classList.add("floppy-anime03");
@@ -174,12 +135,6 @@ window.scrollTo({
     behavior: "smooth"
 })
 });
-// box_img_rocket.addEventListener('dblclick', ()=>{
-//      alert("Lol c'est pas la fusée d'Elon Musk, elle va se déposer en un éclair");
-//  box_img_rocket.classList.remove('box-img-actif')
-//  box_img_rocket.classList.add("box-img-rocket")
-//  box_after.classList.remove('le-after-du-rocket');
-// })
 
 // stepWithTime();
 function stepWithTime(){
@@ -214,54 +169,6 @@ function lesSkill(){
     svg_skill_html.classList.add('skill-svg-html');
     svg_skill_javascript.classList.add('skill-svg-javascript');
     svg_skill_css.classList.add('skill-svg-css')
-}
-
-// window.addEventListener('scroll',duScroll)
-function duScroll(){
-    //window.innerHeight : C'est la hauteur visible de la fenêtre
-    //window.scrollY : value du scroll fait un log pour voir
-    //window.body.offsetHeight : c'est la hauteur de l'element compris avec padding et border, ici cest le body.
-    //pour trouver un resultat en pourcentage faut diviser ainsi compatible sur tout ecran
-    let valuScroll =  (window.innerHeight + window.scrollY) / (document.body.offsetHeight);
-    console.log(valuScroll);
-    switch (true) {
-        case (valuScroll > 0.48 ):
-            stepWithTime();
-            console.log("on est la");
-            break;
-                default :
-                    let x = null;
-    }
-    switch (true) {
-            case (valuScroll > 0.65) : 
-            console.log("he eh");
-            svg_skill_html.classList.add('skill-svg-html');
-            svg_skill_javascript.classList.add('skill-svg-javascript');
-            svg_skill_css.classList.add('skill-svg-css')
-                break;
-                default :
-                    let x = null;
-    }
-    switch (true) {
-            case (valuScroll < 0.54) : 
-            console.log("he eh");
-            svg_skill_html.classList.remove('skill-svg-html');
-            svg_skill_javascript.classList.remove('skill-svg-javascript');
-            svg_skill_css.classList.remove('skill-svg-css')
-                break;
-                default :
-                    let x = null;
-    }
-    switch(true){
-        case(valuScroll < 0.36) :
-        // alert("Lol c'est pas la fusée d'Elon Musk, elle va se déposer en un éclair");
-            box_img_rocket.classList.remove('box-img-actif')
-            box_img_rocket.classList.add("box-img-rocket")
-            box_after.classList.remove('le-after-du-rocket');
-            break;
-            default :
-                let x = null;
-    }
 }
 
 //////////////////section projet
@@ -332,20 +239,6 @@ box_img_gen.addEventListener('mouseleave', ()=>{
      initDiv = nm;
 });
 
-// let xcv = window.matchMedia("(min-wdith : 375px)")
-// if(xcv.matches){
-//     let valuScroll =  (window.innerHeight + window.scrollY) / (document.body.offsetHeight);
-//     console.log(valuScroll);
-//     switch (true) {
-//         case (valuScroll > 0.48 ):
-//             stepWithTime();
-//             console.log("le max-width");
-//             break;
-//                 default :
-//                     let x = null;
-//     }
-// }
-// const media1 = windowindows
 const media1 = window.matchMedia("(max-width: 320px)");
 const media2 = window.matchMedia("(max-width: 375px)");
 const media3 = window.matchMedia("(max-width: 414px)");
@@ -366,9 +259,7 @@ function funcMedia(){
     //toskill
     const skil1536 = valuScroll > 0.71;
     // stepWithTime();
-    console.log(valuScroll);
     if(media7.matches && valto1536){
-        console.log("1536px");
         regl_ico1.classList.add("class-js-to-rotate1");
         setTimeout(() => {
         regl_ico2.classList.add("class-js-to-rotate2")
@@ -395,7 +286,6 @@ function funcMedia(){
         }, 1500);
     }
     else if(media6.matches && valto1024){
-        console.log("1024px");
         regl_ico1.classList.add("class-js-to-rotate1");
         setTimeout(() => {
         regl_ico2.classList.add("class-js-to-rotate2")
@@ -422,7 +312,6 @@ function funcMedia(){
         }, 1500);
     }
     else if(media5.matches && valto768){
-        console.log("768px");
         regl_ico1.classList.add("class-js-to-rotate1");
         setTimeout(() => {
         regl_ico2.classList.add("class-js-to-rotate2")
@@ -449,7 +338,6 @@ function funcMedia(){
         }, 1500);
     }
     else if(media4.matches && valto425){
-        console.log("425px  avec val 0.50");
         regl_ico1.classList.add("class-js-to-rotate1");
         setTimeout(() => {
         regl_ico2.classList.add("class-js-to-rotate2")
@@ -475,12 +363,6 @@ function funcMedia(){
         })
         }, 1500);
     }
-    else if(media3.matches && valto414){
-        console.log("414px");
-    }
-    else if(media2.matches && valto375){
-        console.log("375px");
-    }
 }
 // funcMedia();
 function skillScrolling(){
@@ -490,27 +372,22 @@ function skillScrolling(){
     const skil1024 = valuScroll > 0.67;
     const skil768 = valuScroll > 0.67;
     const skil425 = valuScroll > 0.57;
-    console.log("dans le skill "+ valuScroll);
     if(media7.matches && skil1536){
-        console.log("ici avec le skill");
         svg_skill_html.classList.add('skill-svg-html');
             svg_skill_javascript.classList.add('skill-svg-javascript');
             svg_skill_css.classList.add('skill-svg-css')
     }
     else if(media6.matches && skil1024){
-        console.log("ici avec le skill de 1024");
         svg_skill_html.classList.add('skill-svg-html');
             svg_skill_javascript.classList.add('skill-svg-javascript');
             svg_skill_css.classList.add('skill-svg-css')
     }
     else if(media5.matches && skil768){
-        console.log("ici avec le skill de 768");
         svg_skill_html.classList.add('skill-svg-html');
             svg_skill_javascript.classList.add('skill-svg-javascript');
             svg_skill_css.classList.add('skill-svg-css')
     }
     else if(media4.matches && skil425){
-        console.log("ici avec le skill de 425");
         svg_skill_html.classList.add('skill-svg-html');
             svg_skill_javascript.classList.add('skill-svg-javascript');
             svg_skill_css.classList.add('skill-svg-css')
@@ -520,13 +397,4 @@ function closeFunc(){
     funcMedia();
     skillScrolling();
 }
-window.addEventListener('scroll',closeFunc)
-    // console.log(valuScroll);
-    // switch (true) {
-    //     case (valuScroll > 0.48 ):
-    //         stepWithTime();
-    //         console.log("on est la");
-    //         break;
-    //             default :
-    //                 let x = null;
-    // }
+window.addEventListener('scroll',closeFunc);
