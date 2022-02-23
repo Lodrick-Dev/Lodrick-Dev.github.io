@@ -315,6 +315,9 @@ footer{
 .sociaux-cont > ul > li > i{
     font-size: 1.2em;
 }
+.sociaux-cont > ul > a > li > i{
+    font-size: 1.2em;
+}
 .foot-bull{
     height: 40px;
     width: 40px;

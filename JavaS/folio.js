@@ -1,27 +1,10 @@
 ////timeNow
 const horaire = document.querySelector('.head-div-time > span');
-function leTime(){
-    let dateNow = new Date();
-    let heures = dateNow.getHours();
-    let minutes = dateNow.getMinutes();
-    let secondes = dateNow.getSeconds();
-    if(heures < 10){
-        heures = "0" + heures;
-    }
-    if(minutes < 10){
-        minutes = "0" + minutes
-    }
-    if(secondes < 10){
-        secondes = "0" + secondes
-    }
-    let timjod =  heures +" : "+minutes +" : "+secondes;
-    horaire.textContent = timjod;
-    ref();
-}
-function ref(){
-    setTimeout("leTime()", 1000)
-}
-leTime();
+window.addEventListener('load', async () => {
+    const dataCountVisitor = await fetch('https://api.countapi.xyz/hit/portfolioweblod/countervisitoruplod');
+    const count = await dataCountVisitor.json();
+    horaire.textContent = count.value;
+});
 
 ////menu
 const btn_menu = document.querySelector(".btn-menu");
@@ -398,3 +381,12 @@ function closeFunc(){
     skillScrolling();
 }
 window.addEventListener('scroll',closeFunc);
+
+const btn_inst = document.querySelector(".sociaux-cont > ul > li:nth-child(1)");
+const btn_discord = document.querySelector(".sociaux-cont > ul > li:nth-child(2)");
+btn_inst.addEventListener("click", ()=>{
+    alert("Lol c'est juste pour l'esthétique, uniquement le lien de LinkedIn fonctionne")
+})
+btn_discord.addEventListener("click", ()=>{
+    alert("Lol c'est juste pour l'esthétique, uniquement le lien de LinkedIn fonctionne")
+})

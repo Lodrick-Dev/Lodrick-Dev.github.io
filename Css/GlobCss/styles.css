@@ -1242,6 +1242,18 @@ footer > div:nth-child(1){
     font-size: 2em;
     pointer-events: none;
 }
+.sociaux-cont > ul > a > li{
+    position: relative;
+    cursor: pointer;
+}
+.sociaux-cont > ul > a > li > i{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 2em;
+    pointer-events: none;
+}
 .foot-bull{
     height: 70px;
     width: 70px;
