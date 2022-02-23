@@ -17,6 +17,9 @@
     list-style: none;
     overflow-x: hidden;
 }
+body {
+    scroll-behavior: smooth;
+}
 #before-header{
     background: var(--bg-color);
     height: 100vh;
