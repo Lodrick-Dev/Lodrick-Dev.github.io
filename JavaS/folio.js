@@ -1,7 +1,7 @@
 ////timeNow
 const horaire = document.querySelector('.head-div-time > span');
 window.addEventListener('load', async () => {
-    const dataCountVisitor = await fetch('https://api.countapi.xyz/hit/portfolioweblod/ncountervisitoruplod');
+    const dataCountVisitor = await fetch('https://api.countapi.xyz/hit/portfolioweblod/finalcountfolio');
     const count = await dataCountVisitor.json();
     horaire.textContent = count.value;
 });
