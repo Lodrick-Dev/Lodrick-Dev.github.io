@@ -284,20 +284,18 @@ main{
 
 
 main > .to-redirec{
-    position: absolute;
+    position: fixed;
     background: #0a6ddf;
-    border-radius: 5px;
-    width: 50%;
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
     transition: 1s;
-    top: 50px;
-    /* transform: translate(50%, 150%); */
-    animation: moveFull 25s linear infinite;
+    top: 0px;
+    right: 50%;
+    transform: translate(50%, 0%);
     animation-play-state: running;
     z-index: 500;
     cursor: pointer;
-}
-main > .to-redirec:hover{
-    animation-play-state: paused;
+    padding: 5px;
 }
 main > .to-redirec > h1{
     font-size: 0.9em;
@@ -306,17 +304,6 @@ main > .to-redirec > h1{
 }
 main > .to-redirec > h1 > a{
     color: var(--bg-ball-3);
-}
-@keyframes moveFull {
-    0%{
-        transform: translate(-50%, -150%);
-    }
-    50%{
-        transform: translate(550%, 5060%);
-    }
-    100%{
-        transform: translate(-950%, 2050%);
-    }
 }
 
 
