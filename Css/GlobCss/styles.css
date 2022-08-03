@@ -279,7 +279,47 @@ main{
     background: var(--bg-section);
     padding: 0 15px 25px 15px;
     width: 100%;
+    /* position: relative; */
 }
+
+
+main > .to-redirec{
+    position: absolute;
+    background: #0a6ddf;
+    border-radius: 5px;
+    width: 25%;
+    transition: 1s;
+    top: 50px;
+    /* transform: translate(50%, 150%); */
+    animation: moveFull 25s linear infinite;
+    animation-play-state: running;
+    z-index: 500;
+    cursor: pointer;
+}
+main > .to-redirec:hover{
+    animation-play-state: paused;
+}
+main > .to-redirec > h1{
+    font-size: 0.9em;
+    color: #dfdb0a;
+    text-align: center;
+}
+main > .to-redirec > h1 > a{
+    color: var(--bg-ball-3);
+}
+@keyframes moveFull {
+    0%{
+        transform: translate(-50%, -150%);
+    }
+    50%{
+        transform: translate(550%, 5060%);
+    }
+    100%{
+        transform: translate(-950%, 2050%);
+    }
+}
+
+
 /*nom du portfolio */
 .div-name-portfolio{
     font-size: 0.8em;
